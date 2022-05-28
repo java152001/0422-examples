@@ -1,9 +1,12 @@
 // Example 1 Basic Data Types
 
-// let myFirstName = 'Ash';
+// let myFirstName = `Ash`;
 // let cities = ['Pallet Town', 'Viridian City', 'Cerulean City', 'Pewter City', 'Lavender Town', 'Celadon City', 'Fuschia City', 'Cinnabar Island', 'Victory Road']
 // let numberOfCities = cities.length;
-// let havingFun = true;
+// let havingFun = 'true';
+// console.log('havingFun1: ', havingFun)
+// havingFun = true;
+// console.log('havingFun2: ', havingFun)
 
 // let areWeHavingFun = function (caughtEmAll) {
 //     if (caughtEmAll) {
@@ -15,7 +18,7 @@
 
 // console.log('myFirstName: ', myFirstName);
 // console.log('numberOfCities: ', numberOfCities);
-// console.log('havingFun: ', havingFun)
+
 // console.log('stillHavingFun: ', areWeHavingFun(false));
 
 // Example 2 Variable Scope
@@ -27,7 +30,8 @@
 // }
 
 // function yourStarter() {
-//     var starter = 'Squirtle';
+//     var starter = 'squirtle';
+//     starter = starter.toUpperCase();
 //     return starter;
 // }
 
@@ -38,11 +42,22 @@
 // Example 3 Equal Operator
 // 3.1 Re-assignment
 
-// let kantoCity = ["Vermillion City"];
+let kantoCity = [{city: "Vermillion City", population: 10000}, {city: "Cerulean City", population: 5000}];
+
+let newKantoCities = kantoCity.map(function(town) {
+    if (town.population > 8000) {
+        return 'New ' + town.city
+    } else {
+        return town.city
+    }
+})
+
+console.log(newKantoCities);
+console.log(kantoCity);
 
 // let johtoCity = kantoCity;
 
-// // johtoCity[0] = 'New ' + kantoCity;
+// johtoCity[0] = 'New ' + kantoCity;
 
 // console.log(kantoCity);
 
@@ -77,7 +92,6 @@
 //   function initialize() {
 //     area.element.style.width = area.width + 'px';
 //     area.element.style.height = area.height + 'px';
-//     document.body.appendChild(area.element);
 //   }
   
 //   // No need to change the following code
@@ -86,6 +100,20 @@
 //     ball.element.style.left = x + 'px';
 //     ball.element.style.top = y + 'px';
 //   }
+
+//   function startTimer() {
+//       setTimeout(function() {
+//         startRickRoll();
+//       }, 180000)
+//   }
+
+//   document.body.addEventListener('mousemove', function() {
+//     console.log('mouse moved');  function startTimer() {
+//         setTimeout(function() {
+//           startRickRoll();
+//         }, 180000)
+//     }  
+//   })
   
 //   // No need to change the following code
 //   // The changeDirectionIfNecessary function reverses the ball direction when it hits the area borders
@@ -106,7 +134,7 @@
 //     // TODO: Set newBall properties: dx, dy, width, height
 
 //     newBall.dx = dx;
-//     newBall.dy = dy;
+//     newBall['dy'] = dy;
 //     newBall.width = 50;
 //     newBall.height = 50;
   
@@ -157,20 +185,22 @@
 //     }, 16)
 //   }
   
-  // Uncomment these lines for step 1 of the activity
-  // This is expected to create 3 balls within the area div
+//   // Uncomment these lines for step 1 of the activity
+//   // This is expected to create 3 balls within the area div
   
-  // initialize();
+//   initialize();
 //   const ball1 = create('blue', 4, 3);
 //   const ball2 = create('red', 1, 5);
 //   const ball3 = create('green', 2, 2);
-  // moveTo(ball1, 1, 1);
-  // moveTo(ball2, 10, 10);
-  // moveTo(ball3, 20, 20);
+//   const ball4 = create('goldenrod', 3, 4);
+//   // moveTo(ball1, 1, 1);
+//   // moveTo(ball2, 10, 10);
+//   // moveTo(ball3, 20, 20);
   
-  // Uncomment these lines for step 2 of the activity
-  // This is expected to make the 3 balls move around the area div
+//   // Uncomment these lines for step 2 of the activity
+//   // This is expected to make the 3 balls move around the area div
   
 //   update(ball1, 70, 0);
 //   update(ball2, 20, 200);
 //   update(ball3, 300, 330);
+//   update(ball4, 150, 250);
