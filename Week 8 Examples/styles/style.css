@@ -1,0 +1,192 @@
+/*** Example 1 CSS ***/
+
+/* .container {
+    width: 960px;
+    margin: 80px auto 0;
+}
+
+h1 {
+    color: #0170FF;
+}
+
+a {
+    color: #FF0101;
+}
+
+li {
+    border-left: 5px solid #005cfc;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    list-style-type: none;
+}
+
+.content {
+    padding: 20px;
+    margin: 10px;
+    font-style: italic;
+    background-color: #424EDC;
+    color: #fff;
+}
+
+.active {
+    border-left-color: #01e4ff;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: #424EDC;
+    color: #fff;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.footer:hover {
+    opacity: 0.6;
+} */
+
+/*** Example 2 Grid CSS ***/
+
+/* body {
+    margin: 40px;
+  }
+  
+  .sidebar {
+      grid-column: 1/2;
+      grid-row: 2;
+  }
+  
+  .content {
+    grid-column: 2/4;
+    grid-row: 2;
+  }
+  
+  .header {
+    grid-column: 2/4;
+    grid-row: 1;
+  }
+  
+  .footer {
+    grid-column: 1/4;
+    grid-row: 3;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+  
+    grid-template-columns: 120px 120px 120px;
+    grid-template-areas:
+      '....... header header'
+      'sidebar content content'
+      'footer  footer  footer';
+  }
+  
+  .box {
+    background-color: #0000ff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 150%;
+  }
+  
+  .header,
+  .footer {
+    background-color: #999;
+  }
+
+  .main {
+      margin-bottom: 20px;
+  }
+
+/*** Bonus Example 2 Flex Version ***/
+
+/* .flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: flex-end;
+}
+
+.flex-header {
+    width: 230px;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+.flex-sidebar {
+    margin-right: 10px;
+    flex: 1;
+}
+
+.flex-content {
+    width: 230px;
+}  */
+
+/*** Example 3 Toggled Boxes  ***/
+
+/* .on {
+  background: orange;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 5px;
+}
+
+div {
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  font-size: 1em;
+} */
+
+/*** Example 4 Eyes CSS ***/
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: #14495e;
+  }
+  
+  .eyes {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+  }
+  .turnOffCreepiness {
+    top: 75%;
+  }
+  .eye {
+    width: 240px;
+    height: 120px;
+    background: #fff;
+    display: inline-block;
+    margin: 40px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+  .ball {
+    width: 80px;
+    height: 80px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
